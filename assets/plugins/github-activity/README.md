@@ -4,7 +4,7 @@ This is a small Javascript plugin that creates a stream of your recent GitHub ac
 
 A sample image of the activity stream is shown below:
 
-![](https://raw.githubusercontent.com/caseyscarborough/github-activity/gh-pages/images/matz.png)
+![](https://raw.githubusercontent.com/cmm610/github-activity/gh-pages/images/matz.png)
 
 ### Dependencies
 
@@ -18,7 +18,7 @@ The two dependencies for the plugin are the [Mustache](https://github.com/janl/m
 <script type="text/javascript" src="github-activity-0.1.1.min.js"></script>
 ```
 
-The files can be downloaded from the [dist](https://github.com/caseyscarborough/github-activity/tree/master/dist) directory.
+The files can be downloaded from the [dist](https://github.com/cmm610/github-activity/tree/master/dist) directory.
 
 If you'd like to build the files yourself:
 
@@ -28,7 +28,7 @@ npm install bower
 npm install grunt-cli
 
 # Clone the repository
-git clone https://github.com/caseyscarborough/github-activity.git
+git clone https://github.com/cmm610/github-activity.git
 cd github-activity
 
 # Install dependencies

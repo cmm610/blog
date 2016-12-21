@@ -52,8 +52,8 @@ jQuery(document).ready(function($) {
         }
     );
     
-    /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "cmm610", selector: "#ghfeed" });
+    /* Github Activity Feed - https://github.com/cmm610/github-activity */
+    GitHubActivity.feed({ username: "cmm610", selector: "#ghfeed", limit: 20 });
 
 
 });
