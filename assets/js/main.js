@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
     $("#rss-feeds").rss(
     
         //Change this to your own rss feeds
-        "http://feeds.feedburner.com/TechCrunch/startups",
+        'http://caramacc.blogspot.com/feeds/posts/default',
         
         {
         // how many entries do you want?
