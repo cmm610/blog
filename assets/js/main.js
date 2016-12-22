@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
   /* jQuery RSS - https://github.com/sdepold/jquery-rss */
   $("#rss-feeds").rss(
       //Change this to your own rss feeds
-      'http://caramacc.blogspot.com/feeds/posts/default?alt=rss'
+      'https://caramacc.blogspot.com/feeds/posts/default?alt=rss'
 
       //{
       //  // how many entries do you want?
