@@ -25,9 +25,9 @@ jQuery(document).ready(function ($) {
   /* jQuery RSS - https://github.com/sdepold/jquery-rss */
   $("#rss-feeds").rss(
       //Change this to your own rss feeds
-      'https://caramacc.blogspot.com/feeds/posts/default?alt=rss'
+      'https://caramacc.blogspot.com/feeds/posts/default?alt=rss',
 
-      //{
+      {
       //  // how many entries do you want?
       //  // default: 4
       //  // valid values: any integer
@@ -50,7 +50,7 @@ jQuery(document).ready(function ($) {
       //  // valid values: any string
       //  entryTemplate: '<h3 class="title"><a href="{url}" target="_blank">{title}</a></h3><div><p>{shortBodyPlain}</p><a class="more-link" href="{url}" target="_blank"><i class="fa fa-external-link"></i>Read more</a></div>'
       //
-      //}
+      }
   );
 
   /* Github Activity Feed - https://github.com/cmm610/github-activity */
