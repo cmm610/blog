@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
       //  // valid values: any integer
       //  limit: 3,
       //
-      //  ssl: true,
+        ssl: true,
       //
       //  // the effect, which is used to let the entries appear
       //  // default: 'show'
