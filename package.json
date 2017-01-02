@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "caratime",
   "version": "1.0.0",
   "description": "my blog site",
   "main": "Gruntfile.js",
@@ -13,9 +13,9 @@
   "author": "Cara McIlnay",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cmm610/blog/issues"
+    "url": "https://github.com/cmm610/caratime/issues"
   },
-  "homepage": "https://github.com/cmm610/blog#readme",
+  "homepage": "https://github.com/cmm610/caratime#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-less": "^1.4.0",
