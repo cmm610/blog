@@ -1,2 +1,2 @@
-require('../style/app.css');
+require('../style/scss/app.scss');
 document.write(require('./content.js'));
