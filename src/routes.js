@@ -5,16 +5,25 @@
  */
 
 // <Core /> is where our navigation and child components get passed through
-import Core from './components/Core'
+import Core from './components/Core';
 
-// throws an error in the console if the page wasn't able to load
+/**
+ * Throws an error in the console if the page wasn't able to load
+ * @function errorLoading
+ * @param {String} error
+ */
 function errorLoading(error) {
-	throw new Error(`Dynamic page loading failed: ${error}`)
+	throw new Error(`Dynamic page loading failed: ${error}`);
 }
 
-// Loading modules!
+/**
+ * Loading modules!
+ * @function loadRoute
+ * @param {Function} cb
+ * @return {Function} executes a callback
+ */
 function loadRoute(cb) {
-	return module => cb(null, module.default)
+	return (module) => cb(null, module.default);
 }
 
 /**
@@ -33,7 +42,7 @@ export default {
 		getComponent(location, cb) {
 			System.import('./components/Home')
 				.then(loadRoute(cb))
-				.catch(errorLoading)
+				.catch(errorLoading);
 		},
 	},
 	childRoutes: [
@@ -42,7 +51,7 @@ export default {
 			getComponent(location, cb) {
 				System.import('./components/About')
 					.then(loadRoute(cb, false))
-					.catch(errorLoading)
+					.catch(errorLoading);
 			},
 		},
 		{
@@ -50,7 +59,7 @@ export default {
 			getComponent(location, cb) {
 				System.import('./components/Users')
 					.then(loadRoute(cb))
-					.catch(errorLoading)
+					.catch(errorLoading);
 			},
 		},
 		{
@@ -58,8 +67,8 @@ export default {
 			getComponent(location, cb) {
 				System.import('./components/Home')
 					.then(loadRoute(cb))
-					.catch(errorLoading)
+					.catch(errorLoading);
 			},
 		},
 	],
-}
+};

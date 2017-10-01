@@ -1,11 +1,11 @@
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path')
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 // Okay, this may be confusing at first glance but go through it step-by-step
-module.exports = env => {
-	const ifProd = plugin =>  env.prod ? plugin : undefined;
-	const removeEmpty = array => array.filter(p => !!p);
+module.exports = (env) => {
+	const ifProd = (plugin) => env.prod ? plugin : undefined;
+	const removeEmpty = (array) => array.filter(p => !!p);
 
 	return {
 		/**
@@ -14,7 +14,7 @@ module.exports = env => {
 		 */
 		entry: {
 			app: path.join(__dirname, '../src/'),
-			vendor: ['react', 'react-dom', 'react-router']
+			vendor: ['react', 'react-dom', 'react-router'],
 		},
 		/**
 		 * output tells webpack where to put the files he creates
@@ -26,7 +26,7 @@ module.exports = env => {
 		 */
 		output: {
 			filename: '[name].[hash].js',
-			path: path.join(__dirname, '../build/')
+			path: path.join(__dirname, '../build/'),
 		},
 
 		module: {
@@ -37,17 +37,17 @@ module.exports = env => {
 					exclude: /node_modules/, // ingore /node_modules
 					loader: 'babel-loader', // preprocess with that babel goodness
 					query: {
-						cacheDirectory: true
-					}
-				}
-			]
+						cacheDirectory: true,
+					},
+				},
+			],
 		},
 
 		plugins: removeEmpty([
 			new webpack.optimize.CommonsChunkPlugin({
 				name: 'vendor',
 				minChunks: Infinity,
-				filename: '[name].[hash].js'
+				filename: '[name].[hash].js',
 			}),
 
 			/**
@@ -67,13 +67,13 @@ module.exports = env => {
 					'screw_ie8': true,
 					'warnings': false,
 					'unused': true,
-					'dead_code': true
+					'dead_code': true,
 				},
 				output: {
-					comments: false
+					comments: false,
 				},
-				sourceMap: false
-			}))
-		])
+				sourceMap: false,
+			})),
+		]),
 	};
-}
+};

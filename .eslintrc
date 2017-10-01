@@ -1,0 +1,15 @@
+{
+    "extends": "./node_modules/eslint-config-google/index.js",
+    "rules":{
+        "indent": [2, "tab"],
+        "no-tabs": 0
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    }
+}
