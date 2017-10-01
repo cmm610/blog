@@ -1,9 +1,10 @@
 module.exports = {
 	entry: './src/app.js',
 	output: {
-		path: __dirname,
-		filename: './bin/app.bundle.js'
+		path: '/Users/mcilnayc/WebstormProjects/website/bin',
+		filename: 'app.bundle.js'
 	},
+	devtool: 'source-map',
 	module: {
 		loaders: [
 			{
