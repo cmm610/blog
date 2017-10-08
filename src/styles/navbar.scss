@@ -1,0 +1,11 @@
+nav {
+  padding: 0 6em;
+  text-align: center;
+  .pure-menu-list {
+    min-width: 700px;
+    border-width: 2px;
+    .pure-menu-link {
+      padding: 1em 2em;
+    }
+  }
+}

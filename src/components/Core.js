@@ -9,11 +9,19 @@ import Link from 'react-router/lib/Link';
  */
 const Core = ({ children }) =>
   <div>
-    <nav>
-      <Link to='/'>Home</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/users'>Users</Link>
-    </nav>
+	<nav className='pure-menu pure-menu-horizontal'>
+		<ul className='pure-menu-list border-btm'>
+			<li className='pure-menu-item'>
+				<Link className='pure-menu-link' to='/'>Home</Link>
+			</li>
+			<li className='pure-menu-item'>
+				<Link className='pure-menu-link' to='/about'>About</Link>
+			</li>
+			<li className='pure-menu-item'>
+				<Link className='pure-menu-link' to='/users'>Users</Link>
+			</li>
+		</ul>
+	</nav>
     <main>
       { children }
     </main>
